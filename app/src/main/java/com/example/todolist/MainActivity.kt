@@ -42,8 +42,8 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            alertDialog.setNegativeButton("Cancel") { dialog, which ->
-                dialog.cancel()
+            alertDialog.setNegativeButton("Delete") { dialog, which ->
+                adapter.remove(input.text.toString())
             }
 
             alertDialog.show()
